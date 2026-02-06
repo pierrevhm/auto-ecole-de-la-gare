@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Auto école de la gare | Sur la bonne voie.</title>
+    <meta name="description" content="Auto école de la gare - Sur la bonne voie.. Auto-école à Lyon.">
+    
+    <meta property="og:title" content="Auto école de la gare | Sur la bonne voie.">
+    <meta property="og:description" content="Auto école de la gare - Sur la bonne voie.. Auto-école à Lyon.">
+    <meta property="og:image" content="https://akssmktgzcskwexezsso.supabase.co/storage/v1/object/public/document%20student%20upload/logo/Gemini_Generated_Image_sa8bjwsa8bjwsa8b.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Lato', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: {
+                            400: '#1e3a8a', /* COULEUR PRINCIPALE */
+                            500: '#1e3a8a',
+                            600: '#1e3a8a', 
+                        },
+                        cream: '#f8fafc',
+                        dark: '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --brand-color: #1e3a8a;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f9f9f7;
+            color: #1c1c1c;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        .kreno-widget { position: fixed; bottom: 30px; right: 30px; z-index: 50; }
+        .chat-trigger {
+            width: 50px; height: 50px; background: #0f172a; color: #fff; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; cursor: pointer;
+            transition: 0.3s; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .chat-trigger:hover { background: var(--brand-color); transform: scale(1.05); }
+        .chat-frame {
+            position: absolute; bottom: 70px; right: 0; width: 320px; height: 450px;
+            background: #fff; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-radius: 8px; display: none; overflow: hidden; flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="fixed w-full bg-cream/90 backdrop-blur-sm z-40 py-6 border-b border-gray-200/50">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3">
+                <img src="https://akssmktgzcskwexezsso.supabase.co/storage/v1/object/public/document%20student%20upload/logo/Gemini_Generated_Image_71u5hw71u5hw71u5.png" class="h-12 w-12 rounded-full object-cover border border-gray-200 shadow-sm" alt="Auto école de la gare" 
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="hidden items-center gap-3 text-2xl font-serif font-bold tracking-wide" style="display:none;">
+                    <i class="fa-solid fa-graduation-cap text-gold-400 text-xl"></i>
+                    <span>Auto école de la gare</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex gap-8 text-sm uppercase tracking-widest text-gray-600 font-medium">
+                <a href="#offres" class="hover:text-black transition">Offres</a>
+                <a href="#avis" class="hover:text-black transition">Témoignages</a>
+                <a href="#contact" class="hover:text-black transition">Contact</a>
+            </nav>
+            <button onclick="toggleChat()"
+                class="border border-black px-6 py-2 text-xs uppercase tracking-widest hover:bg-black hover:text-white transition duration-300">
+                Contactez-nous
+            </button>
+        </div>
+    </header>
+
+    <section class="min-h-screen flex items-center md:pt-0 pt-20">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6 w-full">
+            <div class="reveal active">
+                <div class="w-16 h-1 bg-gold-400 mb-8"></div>
+                <h1 class="text-5xl md:text-7xl leading-tight mb-8 text-dark">
+                    Sur la bonne voie.
+                </h1>
+                <p class="text-lg text-gray-600 mb-10 font-light leading-relaxed max-w-md">
+                    Notre approche est centrée sur un suivi personnalisé et une progression adaptée à chaque élève. Nous mettons l'accent sur la maîtrise du véhicule en s...
+                </p>
+                <div class="flex gap-6">
+                    <button onclick="document.getElementById('offres').scrollIntoView({behavior: 'smooth'})"
+                        class="bg-dark text-white px-8 py-4 text-sm uppercase tracking-widest hover:bg-gold-500 transition duration-300">
+                        Je m'inscris
+                    </button>
+                    <a href="tel:04 78 12 34 56"
+                        class="flex items-center gap-2 text-sm uppercase tracking-widest hover:text-gold-500 transition border border-gray-300 px-6 py-4 hover:border-gold-500">
+                        <i class="fa-solid fa-phone text-lg"></i> 04 78 12 34 56
+                    </a>
+                </div>
+            </div>
+            <div class="relative h-[600px] bg-gray-200 overflow-hidden reveal active" style="transition-delay: 0.2s">
+                <img src="https://akssmktgzcskwexezsso.supabase.co/storage/v1/object/public/document%20student%20upload/logo/Gemini_Generated_Image_sa8bjwsa8bjwsa8b.png"
+                    onerror="this.src='https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=1000&auto=format&fit=crop'"
+                    class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700 ease-in-out"
+                    alt="Image principale">
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-white py-20 border-y border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-gray-100">
+            <div class="p-4">
+                <div class="flex justify-center mb-4"><i class="fa-solid fa-trophy text-3xl text-gold-500"></i></div>
+                <div class="text-4xl font-serif text-dark mb-2">Excellence</div>
+                <div class="text-xs uppercase tracking-widest text-gray-500">Résultats garantis</div>
+            </div>
+            <div class="p-4">
+                <div class="flex justify-center mb-4"><i class="fa-solid fa-user-tie text-3xl text-gold-500"></i></div>
+                <div class="text-4xl font-serif text-dark mb-2">Expertise</div>
+                <div class="text-xs uppercase tracking-widest text-gray-500">Professionnels dédiés</div>
+            </div>
+            <div class="p-4">
+                <div class="flex justify-center mb-4"><i class="fa-solid fa-gem text-3xl text-gold-500"></i></div>
+                <div class="text-4xl font-serif text-dark mb-2">Premium</div>
+                <div class="text-xs uppercase tracking-widest text-gray-500">Service sur-mesure</div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl font-serif mb-4">L'Expérience Auto école de la gare</h2>
+                <div class="w-12 h-0.5 bg-gold-400 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 hover:shadow-xl transition-shadow duration-300 border border-gray-100 text-center group">
+                    <i class="fa-solid fa-tablet-screen-button text-4xl text-gray-300 group-hover:text-gold-500 transition mb-6"></i>
+                    <h3 class="text-xl font-serif mb-4">Pédagogie d'Excellence</h3>
+                    <p class="text-gray-500 font-light mb-0 text-sm leading-relaxed">
+                        Des moniteurs diplômés d'état pour vous accompagner avec bienveillance.
+                    </p>
+                </div>
+
+                <div class="bg-white p-10 hover:shadow-xl transition-shadow duration-300 border border-gray-100 text-center group">
+                    <i class="fa-solid fa-car-side text-4xl text-gray-300 group-hover:text-gold-500 transition mb-6"></i>
+                    <h3 class="text-xl font-serif mb-4">Voiture premium</h3>
+                    <p class="text-gray-500 font-light mb-0 text-sm leading-relaxed">
+                        Apprentissage sur des véhicules récents et sécurisés (Audi A1, Peugeot 208).
+                    </p>
+                </div>
+
+                <div class="bg-white p-10 hover:shadow-xl transition-shadow duration-300 border border-gray-100 text-center group">
+                    <i class="fa-solid fa-user-graduate text-4xl text-gray-300 group-hover:text-gold-500 transition mb-6"></i>
+                    <h3 class="text-xl font-serif mb-4">Accompagnement Connecté</h3>
+                    <p class="text-gray-500 font-light mb-0 text-sm leading-relaxed">
+                        Suivez votre progression en temps réél grace à notre application personnalisée. Un parcours transparent pour une réussite assurée.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-cream border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="text-gold-500 text-4xl mb-6"><i class="fa-solid fa-handshake"></i></div>
+            <h2 class="text-3xl font-serif mb-8 text-dark">Notre Promesse</h2>
+            <p class="text-xl text-gray-600 leading-relaxed font-light italic">
+                "Notre approche est centrée sur un suivi personnalisé et une progression adaptée à chaque élève. Nous mettons l'accent sur la maîtrise du véhicule en sécurité et l'anticipation. Nos véhicules sont récents et nos outils pédagogiques modernes (tablettes, suivi en ligne). Nous proposons des facilités de paiement pour rendre le permis accessible à tous."
+            </p>
+            <div class="w-24 h-px bg-gold-400 mx-auto mt-10"></div>
+        </div>
+    </section>
+
+    <section id="offres" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl font-serif mb-4">Nos Formules</h2>
+                <div class="w-12 h-0.5 bg-gold-400 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-cream p-10 hover:shadow-xl transition-shadow duration-300 border border-gray-100 text-center group">
+                    <i class="fa-solid fa-id-card text-4xl text-gray-300 group-hover:text-gold-500 transition mb-6"></i>
+                    <h3 class="text-xl font-serif mb-4">Code de la route</h3>
+                    <p class="text-gray-500 font-light mb-8 text-sm leading-relaxed">Une entrée en matière soignée avec l'essentiel de nos services.</p>
+                    <span class="text-gold-600 text-lg font-serif">150&euro;</span>
+                </div>
+
+                <div class="bg-dark text-white p-10 shadow-2xl relative transform md:-translate-y-4 text-center">
+                    <div class="absolute top-0 right-0 p-4">
+                        <i class="fa-solid fa-star text-gold-400"></i>
+                    </div>
+                    <i class="fa-solid fa-crown text-4xl text-gold-400 mb-6"></i>
+                    <h3 class="text-xl font-serif mb-4 text-white">Permis B</h3>
+                    <p class="text-gray-400 font-light mb-8 text-sm leading-relaxed">L'expérience complète. Accompagnement prioritaire et illimité.</p>
+                    <span class="text-white text-lg font-serif border-b border-gold-400 pb-1">1290&euro;</span>
+                    <div class="mt-8">
+                        <button onclick="toggleChat()" class="text-xs uppercase tracking-widest border border-gold-400 px-6 py-3 hover:bg-gold-400 hover:text-dark transition">Sélectionner</button>
+                    </div>
+                </div>
+
+                <div class="bg-cream p-10 hover:shadow-xl transition-shadow duration-300 border border-gray-100 text-center group">
+                    <i class="fa-solid fa-gem text-4xl text-gray-300 group-hover:text-gold-500 transition mb-6"></i>
+                    <h3 class="text-xl font-serif mb-4">Conduite Accompagnée</h3>
+                    <p class="text-gray-500 font-light mb-8 text-sm leading-relaxed">Une solution entièrement personnalisée selon vos exigences.</p>
+                    <span class="text-gold-600 text-lg font-serif">1450&euro;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="avis" class="bg-dark py-24 text-center px-6 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="flex justify-center items-center gap-3 mb-16">
+                <div class="flex text-gold-400 text-xl">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="font-serif text-2xl text-white">4.8/5</span>
+                <span class="text-gray-500 text-xs uppercase tracking-widest border-l border-gray-700 pl-3">Avis Google</span>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <i class="fa-solid fa-quote-left text-2xl text-gold-600 mb-6 opacity-50"></i>
+                    <p class="text-lg font-serif text-gray-300 italic leading-relaxed mb-6">"Formation de qualité, moniteurs patients et pédagogues."</p>
+                    <div class="text-gold-400 uppercase tracking-widest text-xs font-bold">Marie L.</div>
+                </div>
+                <div class="text-center md:border-x md:border-gray-800 md:px-4">
+                    <i class="fa-solid fa-quote-left text-2xl text-gold-600 mb-6 opacity-50"></i>
+                    <p class="text-lg font-serif text-gray-300 italic leading-relaxed mb-6">"J'ai obtenu mon permis du premier coup grâce à cette auto-école !"</p>
+                    <div class="text-gold-400 uppercase tracking-widest text-xs font-bold">Thomas B.</div>
+                </div>
+                <div class="text-center">
+                    <i class="fa-solid fa-quote-left text-2xl text-gold-600 mb-6 opacity-50"></i>
+                    <p class="text-lg font-serif text-gray-300 italic leading-relaxed mb-6">"Équipe très professionnelle et vraiment à l'écoute."</p>
+                    <div class="text-gold-400 uppercase tracking-widest text-xs font-bold">Sophie M.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-white py-16 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12 items-start">
+            <div>
+                <div class="mb-6">
+                    <img src="https://akssmktgzcskwexezsso.supabase.co/storage/v1/object/public/document%20student%20upload/logo/Gemini_Generated_Image_71u5hw71u5hw71u5.png" class="h-12 w-12 rounded-full object-cover border border-gray-200 shadow-sm" alt="Auto école de la gare" 
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <div class="text-2xl font-serif font-bold" style="display:none;">
+                        Auto école de la gare<span class="text-gold-400">.</span>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-500 font-light leading-relaxed mb-6">Auto école de la gare - Votre auto-école à Lyon. Paiement accepté : CB, Espèces, Chèque.</p>
+                <div class="flex gap-4 text-xl">
+                    
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+            <div>
+                <h4 class="text-xs uppercase tracking-widest font-bold mb-6 text-dark">Nous Contacter</h4>
+                <p class="mb-4 text-gray-600 font-light hover:text-gold-500 transition"><i class="fa-solid fa-phone mr-3 text-gold-400"></i> 04 78 12 34 56</p>
+                <p class="mb-4 text-gray-600 font-light hover:text-gold-500 transition"><i class="fa-solid fa-envelope mr-3 text-gold-400"></i> contact@autoecoledelagare.fr</p>
+            </div>
+            <div>
+                <h4 class="text-xs uppercase tracking-widest font-bold mb-6 text-dark">Horaires d'Ouverture</h4>
+                <div class="text-sm text-gray-600 font-light whitespace-pre-line leading-relaxed">
+                    Lundi: 14h00 - 19h00
+Mardi: 09h00 - 12h00 / 14h00 - 19h00
+Mercredi: 09h00 - 12h00 / 14h00 - 19h00
+Jeudi: 09h00 - 12h00 / 14h00 - 19h00
+Vendredi: 09h00 - 12h00 / 14h00 - 18h00
+Samedi: 09h00 - 13h00
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 mt-16 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between text-xs text-gray-400 font-light">
+            <p>© 2026 Auto école de la gare - Tous droits réservés.</p>
+            <p>Propulsé par <span class="text-black font-medium">Kreno</span></p>
+        </div>
+    </footer>
+
+    <div class="kreno-widget">
+        <div class="chat-frame" id="chatFrame">
+            <div class="h-12 bg-black text-white flex items-center justify-between px-4">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-circle-user text-gold-400"></i>
+                    <span class="font-serif italic text-sm">Trajectoire</span>
+                </div>
+                <button onclick="toggleChat()" class="text-gray-400 hover:text-white">&times;</button>
+            </div>
+            <div class="flex-1 bg-gray-50 p-4 overflow-y-auto font-light text-sm" id="chatBody">
+                <div class="bg-white p-3 rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-sm mb-2 max-w-[80%] text-gray-800 border border-gray-100">
+                    Bonjour. Bienvenue chez Auto école de la gare. Comment pouvons-nous vous assister aujourd'hui ?
+                </div>
+            </div>
+            <div class="p-3 bg-white border-t border-gray-100">
+                <div class="flex items-center gap-2">
+                    <input type="text" id="chatInput" placeholder="Votre message..."
+                        class="flex-1 text-sm outline-none font-light py-2"
+                        onkeypress="if(event.key==='Enter') sendMessage()">
+                    <button onclick="sendMessage()" class="text-black hover:text-gold-500 transition"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="chat-trigger" onclick="toggleChat()">
+            <i class="fa-solid fa-comment"></i>
+        </div>
+    </div>
+
+    <script>
+        function toggleChat() {
+            const frame = document.getElementById('chatFrame');
+            frame.style.display = frame.style.display === 'flex' ? 'none' : 'flex';
+            if (frame.style.display === 'flex') document.getElementById('chatInput').focus();
+        }
+        function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const val = input.value.trim();
+            if (!val) return;
+            const body = document.getElementById('chatBody');
+            body.innerHTML += `<div class="bg-black text-white p-3 rounded-tl-lg rounded-bl-lg rounded-br-lg shadow-sm mb-2 max-w-[80%] self-end ml-auto text-right">${val}</div>`;
+            input.value = '';
+            setTimeout(() => {
+                body.innerHTML += `<div class="bg-white p-3 rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-sm mb-2 max-w-[80%] text-gray-800 border border-gray-100">Nous avons bien reçu votre demande. Notre équipe vous contactera au 04 78 12 34 56 très prochainement.</div>`;
+                body.scrollTop = body.scrollHeight;
+            }, 1000);
+        }
+        window.addEventListener('scroll', () => {
+            const reveals = document.querySelectorAll('.reveal');
+            for (let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                const elementTop = reveals[i].getBoundingClientRect().top;
+                const elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add('active');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
